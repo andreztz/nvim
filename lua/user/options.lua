@@ -1,6 +1,7 @@
 local options = {
-  backup = false,                          -- creates a backup file
+  autoread = true,                         -- reload modified file
   clipboard = "unnamedplus",               -- allows neovim to access the system clipboard
+  backup = false,                          -- creates a backup file
   cmdheight = 2,                           -- more space in the neovim command line for displaying messages
   completeopt = { "menuone", "noselect" }, -- mostly just for cmp
   conceallevel = 0,                        -- so that `` is visible in markdown files
@@ -58,4 +59,9 @@ vim.o.termguicolors = true
 vim.cmd [[ 
     autocmd BufRead * autocmd FileType <buffer> ++once
       \ if &ft !~# 'commit\|rebase' && line("'\"") > 1 && line("'\"") <= line("$") | exe 'normal! g`"' | endif
+]]
+
+-- Auto reload modified file 
+vim.cmd [[
+    au FocusGained,BufEnter * :checktime
 ]]

@@ -111,6 +111,7 @@ return packer.startup(function(use)
     -- https://github.com/euclio/vim-markdown-composer
     -- :help markdown-composer
     use {"euclio/vim-markdown-composer", run = "cargo build --release"}
+
     use {"ellisonleao/glow.nvim", branch = 'main'}
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins
