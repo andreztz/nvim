@@ -16,4 +16,18 @@ return {
             },
         },
     },
+    {
+        -- https://github.com/simrat39/symbols-outline.nvim
+        "simrat39/symbols-outline.nvim",
+        opts = {},
+    },
+    {
+        "nvim-neo-tree/neo-tree.nvim",
+        opts = {
+            window = {
+                position = "left",
+                width = 20,
+            },
+        },
+    },
 }
