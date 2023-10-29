@@ -8,3 +8,8 @@ Refer to the [documentation](https://lazyvim.github.io/installation) to get star
 # LSP
 
 https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md
+
+
+
+sudo pacman -S --needed chafa imagemagick ffmpegthumbnailer fontpreview
+paru -S poppler
