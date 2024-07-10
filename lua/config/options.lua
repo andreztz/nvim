@@ -12,4 +12,4 @@ options.expandtab = true
 options.shiftwidth = 4
 options.tabstop = 4
 options.smartindent = true
-options.wrap = true
+options.wrap = false
