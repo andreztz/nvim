@@ -3,9 +3,9 @@
 return {
     {
         "folke/tokyonight.nvim",
-        lazy = true,
+        lazy = false,
         opts = {
-            transparent = true,
+            transparent = false,
             styles = {
                 sidebars = "transparent",
                 floats = "transparent",
@@ -21,7 +21,7 @@ return {
     },
     {
         "navarasu/onedark.nvim",
-        lazy = false,
+        lazy = true,
         config = function()
             require("onedark").load()
             vim.cmd("colorscheme onedark")
